@@ -6,12 +6,16 @@
 
 body{
   background-color: #24252a;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 
 
 .container{
- transform: translate(0%,30%);
+ transform: translate(0%,15%);
   margin: 0 auto;
   max-width: 240px;
   padding: 20px;
@@ -44,4 +48,27 @@ body{
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 1.5px;
+}
+
+.processando{
+  margin-top: 1rem;
+  border-radius: 100px;
+  padding: 3rem 3rem;
+  width: 5px;
+  border-top: 2px solid white;
+  animation: processando 1.4s linear infinite;
+}
+@keyframes  processando {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+#desenvovimento{
+  color: white;
+  font-size: 2rem;
+  letter-spacing: 1px;
 }
